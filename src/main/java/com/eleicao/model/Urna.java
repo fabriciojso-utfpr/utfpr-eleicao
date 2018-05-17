@@ -1,7 +1,19 @@
 package com.eleicao.model;
 
-public class Urna {
+import java.io.Serializable;
+
+public class Urna implements Serializable{
     
-    private String nome;
+    private final String nome;
+
+    public Urna(String nome) {
+        this.nome = nome;
+    }
+   
+
+    public String getNome() {
+        return nome;
+    }
+    
     
 }
