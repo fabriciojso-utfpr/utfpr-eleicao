@@ -50,8 +50,7 @@ public class RegistradorEleicao implements IRegistradorEleicao {
 
     @Override
     public HashMap<String, Integer> getVotos() throws RemoteException {
-        Ordering<String> valueComparator = Ordering.natural().onResultOf(Functions.forMap(votos));
-        return valueComparator.;
+        return votos;
     }
 
     @Override
